@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--
+id:
+里面有两种, @+id 还有 @id, 区别是, 前者要自己加, 后者使用已经有了的
+id什么时候写?
+如果在JAVA代码中需要动态的修改这个TextView, 需要就增加
+
+-->
+    
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView 基本属性解析"
+        
+        />
+
+<!--颜色
+    @color是从color.xml文件拿东西, /后面的就是要拿的颜色
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带有颜色的TextView"
+        android:background="@color/olivedrab"
+
+        />
+
+
+<!--
+@mipmap增加图片
+跟老师讲的不同, 老师的是从drawable里面来的, 这里是mipmap
+支持jpg, png
+一般都是使用wrap_content的, 因为别人会把图片设计好
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带有图片背景的TextView"
+        android:background="@mipmap/ic_launcher"
+        />
+
+
+</LinearLayout>
