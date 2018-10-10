@@ -46,5 +46,99 @@ id什么时候写?
         android:background="@mipmap/ic_launcher"
         />
 
+<!--
+@string 关于字符串
+引用的是 values -> strings.xml 文件中的内容
+string里面是键值对的方式
+
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/more"/>
+
+<!--
+设置文字大小, 颜色
+
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置文字大小, 颜色"
+        android:textSize="15sp"
+        android:textColor="@color/blue"
+        />
+
+
+<!--
+设置文本类型
+autoLink
+
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="官网地址: http://www.google.com"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:text="电话: 5419087576"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:text="邮箱: jinzhiyong@gmail.com"
+
+        />
+
+
+<!--
+drawableXxx: Left, Right, Top, Bottom
+在当前文本周围添加图片
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_launcher_background"
+        android:drawableTop="@drawable/ic_launcher_background"
+        android:drawableRight="@drawable/ic_launcher_background"
+        android:gravity="center"
+        android:text="在我周围添加图片吧!" />
+<!--
+2-14省略号与跑马灯
+singLine: true
+ellipsize: end
+上边的在文字太多的情况下, 最后面显示省略号
+
+跑马灯:
+singLine = "true"
+ellipsize = "marquee"
+textIsSelectable = "true"
+marqueeRepeatLimit = "marquee_forever"
+
+
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!Hello World!"
+        android:textIsSelectable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:background="@color/blue"
+        android:textColor="@color/wheat"
+        />
+
 
 </LinearLayout>
