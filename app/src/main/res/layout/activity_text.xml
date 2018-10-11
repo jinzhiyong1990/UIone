@@ -140,5 +140,31 @@ marqueeRepeatLimit = "marquee_forever"
         android:textColor="@color/wheat"
         />
 
+<!--
+设置字体风格
+粗体, 细体, 斜体
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置字体风格"
+        android:textStyle="bold|italic"
+
+
+        />
+
+<!--
+设置文字字体类型
+
+
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置文字字体类型"
+        android:typeface="monospace"
+
+        />
+
 
 </LinearLayout>
