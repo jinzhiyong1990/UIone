@@ -1,0 +1,4 @@
+#Wed Oct 10 15:53:10 PDT 2018
+base.0=/Users/zhiyongjin/Documents/UIone/app/build/intermediates/transforms/dexMerger/debug/4
+path.0=classes.dex
+renamed.0=classes.dex
